@@ -1,0 +1,1 @@
+First Quiz. Wrote code to solve simple problems
