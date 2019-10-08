@@ -24,11 +24,21 @@ def bigger_two(list1,list2)
     list1_value = (list1[i] + list1[i+1])
     list2value =  (list2[i] + list2[i+1])
     if list1_value>= list2value
-        return list1
+        return puts "#{list1}"  
     else 
-        return list2 
+        return puts "#{list2}"  
     end
 
 end
 
-puts bigger_two([1,2] , [3,4])
+# puts bigger_two([1,2] , [3,4])
+# puts bigger_two([1,7], [4,4])
+
+def series_up(n)
+    list = []
+    (n-1).times do 
+    list.push(
+
+
+
+
