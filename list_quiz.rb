@@ -13,11 +13,11 @@ def three_even(list)
     end
 end
 
-# puts three_even([2,1,3,5])
-# puts three_even([2,4,12,5])
-# puts three_even([2,1,4,6])
-# puts three_even([1,4,6,4])
-# puts three_even([])
+ puts three_even([2,1,3,5])
+ puts three_even([2,4,12,5])
+ puts three_even([2,1,4,6])
+ puts three_even([1,4,6,4])
+ puts three_even([])
 
 def bigger_two(list1,list2)
     i = 0
@@ -31,13 +31,30 @@ def bigger_two(list1,list2)
 
 end
 
-# puts bigger_two([1,2] , [3,4])
-# puts bigger_two([1,7], [4,4])
+ puts bigger_two([1,2] , [3,4])
+ puts bigger_two([1,7], [4,4])
 
 def series_up(n)
-    list = []
-    (n-1).times do 
-    list.push(
+    currentnumber = 1
+    stepnumber = 1
+    finallist = []
+    n.times do |x|
+        currentnumber = 1     
+        while currentnumber <= stepnumber
+            finallist.push(currentnumber)   # while your current number is less than the stepnumber push numbers until currentnumber = stepnumber
+            currentnumber += 1
+        end
+        stepnumber += 1
+    end
+    return "#{finallist}"
+end
+puts series_up(1)
+puts series_up(2)
+puts series_up(3)
+puts series_up(4)
+
+        
+
 
 
 
